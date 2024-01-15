@@ -2,6 +2,7 @@
 const inputUno = document.querySelector("#input-1");
 const inputDos = document.querySelector("#input-2");
 const inputTres = document.querySelector("#input-3");
+const resultado = document.querySelector("#resultado");
 
 //variables
 
@@ -16,6 +17,13 @@ btn.addEventListener("click", () => {
 
   const total = Number(valueUno) + Number(valueDos) + Number(valueTres);
 
-  console.log(total);
+  if (total <= 10) {
+    resultado.innerHTML =
+      "¡¡¡Felicitaciones, adoptaste " + total + " perritos ❤️!!!";
+  } else {
+    resultado.innerHTML = " Lo siento 🥲, no puedes adoptar tantos perritos";
+  }
+
+  //console.log(total);
 });
 3;
