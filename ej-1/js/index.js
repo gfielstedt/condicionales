@@ -8,7 +8,6 @@ let estado = false;
 
 //eventos
 img.addEventListener("click", () => {
-  console.log("has hecho un click en la img");
   if (estado == false) {
     img.style.border = "2px solid red";
     estado = true;
